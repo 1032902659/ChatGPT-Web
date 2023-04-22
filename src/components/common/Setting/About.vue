@@ -39,7 +39,7 @@ onMounted(() => {
       
 			 <div style="position: relative;">
        
-    <button style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" onclick="window.location.href='http://qnyblog.lsxyyds.xyz/wx1.png'">-->打赏<--</button>
+    <button style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" onclick="window.location.href='http://qnyblog.lsxyyds.xyz/wx1.png'">打赏</button>
 
    		</div>
       
