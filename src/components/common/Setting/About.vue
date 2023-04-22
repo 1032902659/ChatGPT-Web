@@ -36,13 +36,13 @@ onMounted(() => {
      <h3 class="text-xl font-bold">
         如果你觉得此项目对你有帮助，可以打赏我一杯冰可乐，谢谢
       </h3>
-      <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
+      
 			 
        
     <img src="http://qnyblog.lsxyyds.xyz/wx1.png" alt="打赏">
   
       
-      </div>
+    
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
         {{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}
