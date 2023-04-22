@@ -33,14 +33,14 @@ onMounted(() => {
 <template>
   <NSpin :show="loading">
     <div class="p-4 space-y-4">
-     
+     <h3 class="text-xl font-bold">
+        如果你觉得此项目对你有帮助，可以打赏我一杯冰可乐，谢谢
+      </h3>
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
-			  <p>
-          如果你觉得此项目对你有帮助，可以打赏我一杯冰可乐，谢谢！
-        </p>
+			 
         <p>
           
-          <a href="http://qnyblog.lsxyyds.xyz/wx1.png">打赏打赏打赏</a>
+          <a href="http://qnyblog.lsxyyds.xyz/wx1.png">点我去打赏</a>
 
          
         </p>
