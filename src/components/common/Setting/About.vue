@@ -37,11 +37,11 @@ onMounted(() => {
         如果你觉得此项目对你有帮助，可以打赏我一杯冰可乐，谢谢
       </h3>
       
-			 
+			 <div style="position: relative;">
        
-    <button onclick="window.location.href='http://qnyblog.lsxyyds.xyz/wx1.png'">打赏</button>
+    <button style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" onclick="window.location.href='http://qnyblog.lsxyyds.xyz/wx1.png'">-->打赏<--</button>
 
-  
+   		</div>
       
     
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
