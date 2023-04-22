@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/1032902659/chatgptweb/main/src/assets/avatar.jpg',
       name: 'User',
-      description: 'QQ<a href="https://qm.qq.com/cgi-bin/qm/qr?k=BGdGHQfXBbPTifZPjZA8xC8aOBu2Q1Fs&noverify=0" class="text-blue-500" target="_blank" >QQ</a>',
+      description: '<a href="https://qm.qq.com/cgi-bin/qm/qr?k=BGdGHQfXBbPTifZPjZA8xC8aOBu2Q1Fs&noverify=0" class="text-blue-500" target="_blank" >QQ</a>',
     },
   }
 }
