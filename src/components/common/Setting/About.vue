@@ -38,12 +38,9 @@ onMounted(() => {
       </h3>
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
 			 
-        <p>
-          
-          <a href="http://qnyblog.lsxyyds.xyz/wx1.png">点我去打赏</a>
-
-         
-        </p>
+       
+    <img src="http://qnyblog.lsxyyds.xyz/wx1.png" alt="打赏">
+  
       
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
