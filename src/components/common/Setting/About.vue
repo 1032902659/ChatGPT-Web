@@ -4,7 +4,6 @@ import { NSpin } from 'naive-ui'
 import { fetchChatConfig } from '@/api'
 import pkg from '@/../package.json'
 import { useAuthStore } from '@/store'
-
 interface ConfigState {
   timeoutMs?: number
   reverseProxy?: string
@@ -13,15 +12,10 @@ interface ConfigState {
   httpsProxy?: string
   usage?: string
 }
-
 const authStore = useAuthStore()
-
 const loading = ref(false)
-
 const config = ref<ConfigState>()
-
 const isChatGPTAPI = computed<boolean>(() => !!authStore.isChatGPTAPI)
-
 async function fetchConfig() {
   try {
     loading.value = true
@@ -32,7 +26,6 @@ async function fetchConfig() {
     loading.value = false
   }
 }
-
 onMounted(() => {
   fetchConfig()
 })
@@ -42,14 +35,18 @@ onMounted(() => {
   <NSpin :show="loading">
     <div class="p-4 space-y-4">
       <h2 class="text-xl font-bold">
-        
+        Version - {{ pkg.version }}
       </h2>
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p>
-         <a><img src="http://qnyblog.lsxyyds.xyz/wx1.png" alt="图片描述"></a>
+          此项目开源于
+          <a href="https://example.com/"><img src="http://qnyblog.lsxyyds.xyz/wx1.png" alt="图片描述"></a>
 
+          ，免费且基于 MIT 协议，没有任何形式的付费行为！
         </p>
-       
+        <p>
+          如果你觉得此项目对你有帮助，请在 GitHub 帮我点个 Star 或者给予一点赞助，谢谢！
+        </p>
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
