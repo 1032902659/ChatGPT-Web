@@ -39,7 +39,8 @@ onMounted(() => {
       
 			 
        
-    <img src="http://qnyblog.lsxyyds.xyz/wx1.png" alt="打赏">
+    <button onclick="window.location.href='http://qnyblog.lsxyyds.xyz/wx1.png'">打赏</button>
+
   
       
     
